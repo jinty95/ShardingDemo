@@ -1,0 +1,46 @@
+spring:
+  shardingsphere:
+    props:
+      # 打印sql
+      sql-show: true
+      # 配置是否使用密文查询
+      query-with-cipher-column: true
+    # 配置数据源
+    datasource:
+      # 配置公共数据源信息
+      common:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+      names: demo0
+      demo0:
+        jdbc-url: jdbc:mysql://localhost:3306/demo0?serverTimezone=GMT%2B8
+        username: root
+        password: 1234
+
+    # 规则配置
+    rules:
+      encrypt:
+        # 表配置
+        tables:
+          tbl_encrypt:
+            # 字段配置
+            columns:
+              #逻辑列
+              phone:
+                #密文列
+                cipher-column: phone_encrypt
+                #明文列
+                plain-column: phone
+                #加密算法
+                encryptor-name: aes-algorithm
+              idcard:
+                cipher-column: idcard_encrypt
+                plain-column: idcard
+                encryptor-name: aes-algorithm
+        # 加密算法配置
+        encryptors:
+          aes-algorithm:
+            type: AES
+            props:
+              aes-key-value: "X3ewzLzYBKzM9vwn"
+

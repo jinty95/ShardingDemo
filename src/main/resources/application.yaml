@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: demo2
+
+server:
+  port: 8080
