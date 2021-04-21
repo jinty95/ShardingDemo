@@ -8,7 +8,7 @@ spring:
       # 配置公共数据源信息
       common:
         type: com.zaxxer.hikari.HikariDataSource
-        driver-class-name: com.mysql.jdbc.Driver
+        driver-class-name: com.mysql.cj.jdbc.Driver
       # 配置数据源列表
       names: demo0,demo1
       demo0:
