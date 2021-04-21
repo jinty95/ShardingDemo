@@ -1,7 +1,7 @@
-package cn.jinty.sharding.service;
+package cn.sharding.demo.service;
 
-import cn.jinty.sharding.dao.EncryptMapper;
-import cn.jinty.sharding.entity.Encrypt;
+import cn.sharding.demo.dao.EncryptMapper;
+import cn.sharding.demo.entity.Encrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

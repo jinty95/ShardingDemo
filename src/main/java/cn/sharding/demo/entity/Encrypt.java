@@ -1,4 +1,4 @@
-package cn.jinty.sharding.entity;
+package cn.sharding.demo.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

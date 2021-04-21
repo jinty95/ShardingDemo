@@ -1,7 +1,7 @@
-package cn.jinty.sharding.controller;
+package cn.sharding.demo.controller;
 
-import cn.jinty.sharding.entity.Sharding;
-import cn.jinty.sharding.service.ShardingService;
+import cn.sharding.demo.entity.Sharding;
+import cn.sharding.demo.service.ShardingService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

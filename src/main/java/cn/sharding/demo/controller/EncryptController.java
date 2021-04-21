@@ -1,7 +1,7 @@
-package cn.jinty.sharding.controller;
+package cn.sharding.demo.controller;
 
-import cn.jinty.sharding.entity.Encrypt;
-import cn.jinty.sharding.service.EncryptService;
+import cn.sharding.demo.entity.Encrypt;
+import cn.sharding.demo.service.EncryptService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shardingsphere.encrypt.algorithm.AESEncryptAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;

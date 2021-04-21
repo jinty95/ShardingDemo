@@ -1,6 +1,6 @@
-package cn.jinty.sharding.dao;
+package cn.sharding.demo.dao;
 
-import cn.jinty.sharding.entity.Encrypt;
+import cn.sharding.demo.entity.Encrypt;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

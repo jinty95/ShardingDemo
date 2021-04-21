@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>cn.jinty.demo</groupId>
+    <groupId>cn.sharding.demo</groupId>
     <artifactId>sharding-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 

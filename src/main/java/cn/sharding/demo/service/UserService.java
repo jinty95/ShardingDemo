@@ -1,7 +1,7 @@
-package cn.jinty.sharding.service;
+package cn.sharding.demo.service;
 
-import cn.jinty.sharding.dao.UserMapper;
-import cn.jinty.sharding.entity.User;
+import cn.sharding.demo.dao.UserMapper;
+import cn.sharding.demo.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

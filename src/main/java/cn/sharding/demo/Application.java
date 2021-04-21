@@ -1,10 +1,6 @@
-package cn.jinty.sharding;
+package cn.sharding.demo;
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.shardingsphere.encrypt.algorithm.AESEncryptAlgorithm;
-import org.apache.shardingsphere.infra.config.RuleConfiguration;
-import org.apache.shardingsphere.replicaquery.api.config.ReplicaQueryRuleConfiguration;
-import org.apache.shardingsphere.replicaquery.spi.ReplicaLoadBalanceAlgorithm;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2021/3/17
  **/
 @Slf4j
-@MapperScan(basePackages = "cn.jinty.sharding.dao")
+@MapperScan(basePackages = "cn.sharding.demo.dao")
 @SpringBootApplication
 public class Application {
 

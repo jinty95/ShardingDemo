@@ -1,6 +1,6 @@
-package cn.jinty.sharding.dao;
+package cn.sharding.demo.dao;
 
-import cn.jinty.sharding.entity.Sharding;
+import cn.sharding.demo.entity.Sharding;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
