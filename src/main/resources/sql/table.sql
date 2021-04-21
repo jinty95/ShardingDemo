@@ -66,7 +66,9 @@ CREATE TABLE `tbl1` (
 );
 
 
-#tbl_user表 mobile字段 存量数据加密(MySQL5.6以上支持AES加密)
+/*
+  tbl_user表 mobile字段 存量数据加密(MySQL5.6以上支持AES加密)
+*/
 UPDATE tbl_user
 SET mobile_encrypt = TO_BASE64(AES_ENCRYPT(mobile,FROM_BASE64('eoyiq5vCJKfzZDvER5mNBQ==')))
 WHERE mobile_encrypt IS NULL;
