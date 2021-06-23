@@ -22,21 +22,6 @@ spring:
       encrypt:
         # 表配置
         tables:
-          tbl_encrypt:
-            # 字段配置
-            columns:
-              # 逻辑列
-              phone:
-                # 密文列
-                cipher-column: phone_encrypt
-                # 明文列
-                plain-column: phone
-                # 加密算法
-                encryptor-name: aes-algorithm
-              idcard:
-                cipher-column: idcard_encrypt
-                plain-column: idcard
-                encryptor-name: aes-algorithm
           tbl_user:
             columns:
               mobile:
