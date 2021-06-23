@@ -2,6 +2,7 @@ package cn.sharding.demo.service;
 
 import cn.sharding.demo.dao.UserMapper;
 import cn.sharding.demo.entity.User;
+import cn.sharding.demo.entity.UserWithEnterprise;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +22,10 @@ public class UserService {
 
     public List<User> list(User user){
         return userMapper.list(user);
+    }
+
+    public List<UserWithEnterprise> listWithEnterprise(User user){
+        return userMapper.listWithEnterprise(user);
     }
 
 }

@@ -28,6 +28,16 @@ spring:
                 cipher-column: mobile_encrypt
                 plain-column: mobile
                 encryptor-name: aes-algorithm
+              id_card:
+                cipher-column: id_card_encrypt
+                plain-column: id_card
+                encryptor-name: aes-algorithm
+          tbl_enterprise:
+            columns:
+              contact_mobile:
+                cipher-column: contact_mobile_encrypt
+                plain-column: contact_mobile
+                encryptor-name: aes-algorithm
         # 加密算法配置
         encryptors:
           aes-algorithm:
